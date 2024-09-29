@@ -2,6 +2,12 @@ STREAM WITH AI
 
 - Create React App
 - Configure TailwindCSS
+- Routing App
+- Login Form
+- SignIn Form
+- Validation
+- Firebase Deployment
+- Create SignUp User Account In Firebase
 
 FIRE-BASE DEPLOYMENT CONFIGURATION
 
@@ -21,4 +27,3 @@ SETUP FIREBASE CONFIGURATION INTO THE SYSTEM
     npm run buld
     firebase deploy
 
-    
