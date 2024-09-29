@@ -27,3 +27,7 @@ SETUP FIREBASE CONFIGURATION INTO THE SYSTEM
     npm run buld
     firebase deploy
 
+
+
+@reduxjs/toolkit
+react-redux
