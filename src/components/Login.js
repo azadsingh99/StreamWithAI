@@ -23,6 +23,8 @@ const Login = () => {
             createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
                 .then((userCredential) => {
                     console.log(userCredential);
+                    const user = userCredential.user;
+
                 })
                 .catch((error) => {
                     console.log('ERROR ::: ', error.code, error.message)
