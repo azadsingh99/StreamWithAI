@@ -8,10 +8,10 @@ const Login = () => {
 
     const email = useRef(null);
     const password = useRef(null);
+    const fullName = useRef(null);
 
     const isFormValidated = () => {
-        console.log('I am here into this');
-        const message = validation(email.current.value, password.current.value)
+        const message = validation(email.current.value, password.current.value, fullName?.current?.value)
         setErrorMessage(message);
         
     }
@@ -36,6 +36,7 @@ const Login = () => {
         </h1>
         {!isSignInForm && (
           <input
+            ref = {fullName}
             type="text"
             placeholder="Full Name"
             className="p-4 my-4 w-full bg-gray-700"
@@ -53,7 +54,7 @@ const Login = () => {
           placeholder="Password"
           className="p-4 my-4 w-full bg-gray-700"
         />
-        <p className='text-red-500 '>{errorMessage}</p>
+        <p className='text-red-500 text-lg my-2 mx-2 font-bold'>{errorMessage}</p>
         <button className="p-4 my-6 bg-red-700 w-full rounded-lg" onClick={isFormValidated}>
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
